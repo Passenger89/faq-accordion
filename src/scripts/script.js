@@ -26,5 +26,3 @@ const removeActiveClass = () => {
     content.classList.remove('active')
   })
 }
-
-//* If the selected question contains the class "active" then remove "active" from question and from sibling

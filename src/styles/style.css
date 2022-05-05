@@ -179,22 +179,15 @@ body {
   }
 }
 
-@media (orientation: landscape) and (max-height: 480px) {
-  .container {
-    overflow-y: hidden;
+@media (orientation: landscape) and (min-width: 800px) {
+  body {
+    padding: 1rem;
   }
+
   .card {
-    min-height: 10rem;
-    width: 90%;
     max-width: 90%;
-    max-height: calc(100vh - 10%);
-    height: calc(100vh - 10%);
     flex-direction: row;
-    position: relative;
-    background-image: url('../assets/images/bg-pattern-desktop.svg');
-    background-size: 50rem;
-    background-repeat: no-repeat;
-    background-position: -25rem -12rem;
+    margin: 0;
   }
 
   .card__image,

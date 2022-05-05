@@ -21,7 +21,6 @@ body {
   background: linear-gradient(var(--bg-gradient-violet), var(--bg-gradient-blue));
   font-family: var(--ff-primary);
   font-size: var(--fs-primary);
-  overflow-y: hidden;
 }
 
 .container {
@@ -184,6 +183,10 @@ body {
 }
 
 @media (orientation: landscape) and (max-height: 480px) {
+  .container {
+    background-color: red;
+    overflow-y: hidden;
+  }
   .card {
     min-height: 10rem;
     width: 90%;

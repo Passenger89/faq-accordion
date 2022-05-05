@@ -181,3 +181,55 @@ body {
     text-align: left;
   }
 }
+
+@media (orientation: landscape) and (max-height: 480px) {
+  .card {
+    min-height: 10rem;
+    width: 90%;
+    max-width: 90%;
+    max-height: 50%;
+    flex-direction: row;
+    position: relative;
+    background-image: url('../assets/images/bg-pattern-desktop.svg');
+    background-size: 50rem;
+    background-repeat: no-repeat;
+    background-position: -25rem -12rem;
+  }
+
+  .card__image,
+  .card__text {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .card__image {
+    background-image: url('../assets/images/illustration-woman-online-desktop.svg');
+    background-position: -4rem 4rem;
+    background-repeat: no-repeat;
+  }
+
+  .woman-desktop-mobile {
+    display: none;
+  }
+
+  .svg-box {
+    display: block;
+    width: 12rem;
+    min-width: 12rem;
+    min-height: 12rem;
+    position: absolute;
+    top: 13rem;
+    left: -6rem;
+  }
+
+  .svg-shadow {
+    display: none;
+  }
+  .accordion {
+    margin-left: 0;
+  }
+  .title {
+    margin-top: 0;
+    text-align: left;
+  }
+}

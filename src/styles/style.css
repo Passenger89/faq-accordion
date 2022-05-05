@@ -21,10 +21,6 @@ body {
   background: linear-gradient(var(--bg-gradient-violet), var(--bg-gradient-blue));
   font-family: var(--ff-primary);
   font-size: var(--fs-primary);
-}
-
-.container {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,6 +35,7 @@ body {
   border-radius: 1rem;
   background-color: #fff;
   box-shadow: 0 20px 10px rgba(5, 5, 5, 0.3);
+  margin-bottom: -5rem;
 }
 
 .card__image {

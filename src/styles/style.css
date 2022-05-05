@@ -112,11 +112,9 @@ body {
   font-weight: var(--fw-800);
 }
 
-@media (hover: hover) {
-  .accordion__question:hover {
-    cursor: pointer;
-    color: var(--clr-hoverState-header);
-  }
+.accordion__question:hover {
+  cursor: pointer;
+  color: var(--clr-hoverState-header);
 }
 
 .accordion__content {
@@ -227,5 +225,11 @@ body {
   .title {
     margin-top: 0;
     text-align: left;
+  }
+}
+
+@media not all and (pointer: coarse) {
+  .accordion__question:hover {
+    color: var(--clr-activeState-header);
   }
 }

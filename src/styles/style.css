@@ -112,9 +112,11 @@ body {
   font-weight: var(--fw-800);
 }
 
-.accordion__question:hover {
-  cursor: pointer;
-  color: var(--clr-hoverState-header);
+@media (hover: hover) {
+  .accordion__question:hover {
+    cursor: pointer;
+    color: var(--clr-hoverState-header);
+  }
 }
 
 .accordion__content {
